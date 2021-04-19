@@ -29,7 +29,7 @@
 
             result = data.reduce((r, a) => {
                 r[a.age] = r[a.age] || [];
-                r[a.age].push(a);
+                r[a.age].push(a.name);
                 return r;
             }, Object.create(null));
 
